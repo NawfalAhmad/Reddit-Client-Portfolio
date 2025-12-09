@@ -11,7 +11,7 @@
 ---
 
 ## 📚 **Contents**
-This table is fully interactive — clicking will auto-scroll to that section.
+
 
 | Section | Description |
 |--------|-------------|
@@ -96,17 +96,7 @@ The navbar uses clean flexbox layout:
 
 .navbar-search-icon → fills the button (width: 100%; height: 100%)
 
-🎛️ Theme Support
-Change colors via CSS variables:
 
-css
-Copy code
-:root {
-  --bg: #ffffff;
-  --text: #1a1a1b;
-  --bg-input: #f6f7f8;
-  --text-muted: #878a8c;
-}
 ## **🧩 Components Explained**
 📌 NavBar.tsx
 Handles logo rendering
@@ -127,10 +117,10 @@ The official project logo used inside <img />
 
 ## **🛠️ Known Issues**
 
-Issue	                                    |    Status           
-Search input alignment on small screens   |	  Pending fix
-Navbar width responsiveness	              |  Needs media queries
-Limited components	                      |  More Reddit UI planned
+|Issue	                                    |    Status|
+|Search input alignment on small screens   |	  Pending fix|
+|Navbar width responsiveness	              |  Needs media queries|
+|Limited components	                      |  More Reddit UI planned|
 
 ## **🧭 Roadmap**
 🔜 Short-Term
