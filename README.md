@@ -117,11 +117,11 @@ The official project logo used inside <img />
 
 ## **🛠️ Known Issues**
 
-Search input alignment on small screens------> Pending fix
+Search input alignment on small screens → Pending fix
 
-Navbar width responsiveness------>Needs media queries
+Navbar width responsiveness → Needs media queries
 
-Limited components------>More Reddit UI planned
+Limited components → More Reddit UI planned
 
 ## **🧭 Roadmap**
 🔜 Short-Term
