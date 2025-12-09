@@ -18,7 +18,6 @@ This table is fully interactive — clicking will auto-scroll to that section.
 | 🎯 [Project Overview](#-project-overview) | What the project is and why it exists |
 | ⚡ [Features](#-features) | Functionality included in the current build |
 | 🧱 [Tech Stack](#-tech-stack) | Tools and frameworks used |
-| 🗂️ [Project Structure](#️-project-structure) | Directory and file layout |
 | 🚀 [Getting Started](#-getting-started) | Clone → Install → Run |
 | 🎨 [Styling Breakdown](#-styling-breakdown) | How the navbar + icons are styled |
 | 🧩 [Components Explained](#-components-explained) | File-by-file explanation |
@@ -67,33 +66,26 @@ This project aims to gradually evolve into a fully responsive **Reddit-style web
 
 ---
 
-
 ## 🚀 **Getting Started**
 
 ### **1️⃣ Clone the repository**
 
 ```bash
-1️⃣git clone https://github.com/cwillromero/Reddit-Client-Portfolio.git
+git clone https://github.com/cwillromero/Reddit-Client-Portfolio.git
 cd Reddit-Client-Portfolio
-
 2️⃣ Install dependencies
 npm install
-
 3️⃣ Start the development server
 npm run dev
-
-
 Your project will run locally on:
 
+arduino
 http://localhost:5173/
 ```
-
-🎨 Styling Breakdown
-
+## **🎨 Styling Breakdown**
 The navbar uses clean flexbox layout:
 
 🧩 Layout Highlights
-
 .navbar → horizontal layout + spacing
 
 .navbar-search-container → fixes alignment issues
@@ -104,10 +96,19 @@ The navbar uses clean flexbox layout:
 
 .navbar-search-icon → fills the button (width: 100%; height: 100%)
 
+🎛️ Theme Support
+Change colors via CSS variables:
 
-🧩 Components Explained
+css
+Copy code
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1b;
+  --bg-input: #f6f7f8;
+  --text-muted: #878a8c;
+}
+## **🧩 Components Explained**
 📌 NavBar.tsx
-
 Handles logo rendering
 
 Renders search bar with input + button
@@ -115,7 +116,6 @@ Renders search bar with input + button
 Uses imported CSS module for scoped styling
 
 📌 navBar.module.css
-
 All styles for structure + spacing
 
 Fixes the search bar alignment bug
@@ -123,18 +123,17 @@ Fixes the search bar alignment bug
 Makes the navbar modern and responsive-ready
 
 📌 reddit.png
-
 The official project logo used inside <img />
 
-🛠️ Known Issues
+## **🛠️ Known Issues**
 Issue	Status
 Search input alignment on small screens	Pending fix
 Navbar width responsiveness	Needs media queries
 Documentation expansion	In progress
 Limited components	More Reddit UI planned
-🧭 Roadmap
-🔜 Short-Term
 
+## **🧭 Roadmap**
+🔜 Short-Term
 Add media queries for small screens
 
 Improve accessibility (ARIA, keyboard navigation)
@@ -142,7 +141,6 @@ Improve accessibility (ARIA, keyboard navigation)
 Add complete contributor onboarding docs
 
 📅 Mid-Term
-
 Build sidebar + post list
 
 Add voting & comment components
@@ -150,30 +148,28 @@ Add voting & comment components
 Add routing for different Reddit pages
 
 🚀 Long-Term
-
 Fully interactive Reddit-style client
 
 Theming engine with multiple color presets
 
 API integration for real post data
 
-🤝 Contribution Guide
-
+## **🤝 Contribution Guide**
 We welcome all contributors — especially beginners!
 Follow the steps below to contribute:
 
 1️⃣ Fork the repository
-
 Click Fork on GitHub (top right corner).
 
 2️⃣ Clone your fork
+bash
+Copy code
 git clone <your-fork-url>
-
 3️⃣ Create a new branch
+bash
+Copy code
 git checkout -b docs-improvement
-
 4️⃣ Make your changes
-
 Improve this README
 
 Fix navbar alignment
@@ -183,12 +179,12 @@ Add responsive styles
 Add components
 
 5️⃣ Commit and push
+bash
+Copy code
 git add .
 git commit -m "Improved documentation"
 git push origin docs-improvement
-
 6️⃣ Create a Pull Request
-
 Go to Pull Requests → New PR
 
 Select your branch
@@ -199,8 +195,8 @@ Submit 🎉
 
 We'll review and merge after verification!
 
-📝 License
-
+## **📝 License**
 This project is licensed under the MIT License — free to use, modify, and distribute.
 
 <p align="center"><b>⭐ If you like this project, don't forget to star the repo! ⭐</b></p>
+
