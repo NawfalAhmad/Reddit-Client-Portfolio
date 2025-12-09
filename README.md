@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+# Reddit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight React + TypeScript project styled with CSS modules, inspired by Reddit’s UI. The current focus is on building a **pixel‑perfect, interactive navbar** with a search bar, buttons, and logo integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **React + TypeScript** for component structure and type safety.
+- **CSS Modules** for scoped, maintainable styles.
+- **Navbar Layout**
+  - Logo section with image + text.
+  - Search bar with input + button (SVG icon).
+  - Additional action button.
+- **SVG Icon Integration**
+  - Search icon scales to fill the button.
+  - Flexbox alignment for pixel‑perfect centering.
+- **Customizable Theme**
+  - Uses CSS variables (`--bg`, `--text`, `--bg-input`, `--text-muted`) for easy theming.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+  components/
+    NavBar.tsx        # Main navbar component
+  styles/
+    navBar.module.css # Scoped styles for navbar
+public/
+  reddit.png          # Logo asset
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd <project-folder>
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🎨 Styling Notes
+
+- `.navbar` uses `flex` for horizontal layout and spacing.
+- `.navbar-search` is a flex container for the search input + button.
+- `.navbar-search-input` expands with `flex: 1` to fill available space.
+- `.navbar-search-button` is fixed width (`2rem`) and centers the SVG.
+- `.navbar-search-icon` fills the button (`width: 100%; height: 100%`).
+
+---
+
+## 🔧 Known Issues / Work in Progress
+
+- Search button alignment: fixed by wrapping input + button in a flex container (`.navbar-search-container`).
+- Responsiveness: currently fixed width (`400px`), needs media queries for smaller screens.
+- Documentation: README is evolving as more components are added.
+
+---
+
+## 📌 Next Steps
+
+- Add responsive breakpoints for the navbar.
+- Expand components (sidebar, voting, comments) to match Reddit‑style app goals.
+- Improve accessibility (ARIA labels, keyboard navigation).
+- Write beginner‑friendly onboarding docs for new contributors.

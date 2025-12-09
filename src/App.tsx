@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/navBar";
+import NavBar from "./components/NavBar/NavBar";
 
 function Home() {
   return <h1>Working on it...</h1>;
