@@ -86,6 +86,7 @@ npm run dev
 Your project will run locally on:
 
 http://localhost:5173/
+```
 
 🎨 Styling Breakdown
 
@@ -103,16 +104,6 @@ The navbar uses clean flexbox layout:
 
 .navbar-search-icon → fills the button (width: 100%; height: 100%)
 
-🎛️ Theme Support
-
-Change colors via CSS variables:
-
-:root {
-  --bg: #ffffff;
-  --text: #1a1a1b;
-  --bg-input: #f6f7f8;
-  --text-muted: #878a8c;
-}
 
 🧩 Components Explained
 📌 NavBar.tsx
