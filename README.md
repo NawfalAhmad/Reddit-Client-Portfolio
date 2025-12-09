@@ -1,216 +1,215 @@
-🧭 Reddit Client Portfolio
-<sup>A modern Reddit-style UI built with React + TypeScript</sup>
-<div align="center">
+<h1 align="center">📱 Reddit Client Portfolio</h1>
+<p align="center">A lightweight, modular, and visually consistent Reddit-inspired UI built using <strong>React + TypeScript</strong>, styled with <strong>CSS Modules</strong>.</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.0-blue?logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/CSS%20Modules-Modern-green" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen" />
+</p>
+
+---
+
+## 📚 **Contents**
+This table is fully interactive — clicking will auto-scroll to that section.
+
+| Section | Description |
+|--------|-------------|
+| 🎯 [Project Overview](#-project-overview) | What the project is and why it exists |
+| ⚡ [Features](#-features) | Functionality included in the current build |
+| 🧱 [Tech Stack](#-tech-stack) | Tools and frameworks used |
+| 🗂️ [Project Structure](#️-project-structure) | Directory and file layout |
+| 🚀 [Getting Started](#-getting-started) | Clone → Install → Run |
+| 🎨 [Styling Breakdown](#-styling-breakdown) | How the navbar + icons are styled |
+| 🧩 [Components Explained](#-components-explained) | File-by-file explanation |
+| 🛠️ [Known Issues](#️-known-issues) | Current limitations |
+| 🧭 [Roadmap](#-roadmap) | Upcoming improvements |
+| 🤝 [Contribution Guide](#-contribution-guide) | How to contribute |
+| 📝 [License](#-license) | License info |
+
+---
+
+## 🎯 **Project Overview**
+
+The **Reddit Client Portfolio** is a minimalist front-end replica of core Reddit UI elements.  
+It focuses heavily on **pixel-perfect navbar design**, clean component structure, and simple theme customization.
+
+This project aims to gradually evolve into a fully responsive **Reddit-style web client**, built step by step with clean, readable code suitable for beginners and open-source contributors.
+
+---
+
+## ⚡ **Features**
+
+### ✅ **Core Features**
+- ⚛️ *React + TypeScript* for strong typing & organized components  
+- 🎨 *CSS Modules* for isolated and maintainable styling  
+- 🔍 Interactive *search bar* with integrated SVG icon  
+- 🖼️ Logo + text branding similar to Reddit  
+- 🧩 Pixel-perfect flexbox alignment  
+- 🎛️ CSS variable-based theming (`--bg`, `--text`, `--bg-input`, etc.)
+
+### 🔧 UI Behavior
+- Input expands dynamically using `flex: 1`  
+- Search button is fixed-width + centered icon  
+- Clean component folder organization  
+- Designed with extension in mind (sidebar, posts, voting, etc.)
+
+---
+
+## 🧱 **Tech Stack**
+
+| Layer | Tools Used |
+|-------|------------|
+| Frontend Framework | **React 18**, **TypeScript** |
+| Styling | **CSS Modules**, Flexbox |
+| Build Tool | Vite |
+| Assets | SVG Icons, PNG Logo |
+
+---
 
 
-</div>
-📚 Contents
+## 🚀 **Getting Started**
 
-(Tap any section to auto-scroll)
+### **1️⃣ Clone the repository**
 
-✨ Overview
-
-🖼️ Live Preview
-
-🧩 Tech Stack
-
-🗂️ Project Structure
-
-🚀 Features
-
-🎨 Styling Highlights
-
-🛠️ Installation & Setup
-
-🧭 Component Breakdown
-
-🔧 Known Issues
-
-🗺️ Roadmap
-
-🤝 How to Contribute
-
-📝 Contribution Guidelines
-
-📜 License
-
-❤️ Acknowledgements
-
-✨ Overview
-
-A clean, lightweight, Reddit-inspired UI built using React + TypeScript and styled with elegant CSS Modules.
-Focus: building a pixel-perfect, responsive, component-driven UI starting with the Reddit Navbar.
-
-🖼️ Live Preview
-
-Add images in docs/images/
-
-<div align="center">
-Navbar Preview	Search Bar
-(navbar.png)	(search.png)
-</div>
-🧩 Tech Stack
-Technology	Purpose
-⚛ React	UI Components
-🟦 TypeScript	Type safety
-🎨 CSS Modules	Scoped styling
-⚡ Vite	Fast dev environment
-🖼 SVG Icons	Clean scalable icons
-🗂️ Project Structure
-src/
-  components/
-    NavBar.tsx
-  styles/
-    navBar.module.css
-public/
-  reddit.png
-docs/
-  images/
-
-🚀 Features
-✔ Pixel-perfect Navbar
-✔ Logo + text section
-✔ Responsive search bar
-✔ SVG icon integration
-✔ Flexbox alignment
-✔ Theme variables
-✔ Modular TypeScript components
-🎨 Styling Highlights
-🎛 Theme Variables
---bg: #ffffff;
---text: #1a1a1b;
---bg-input: #f6f7f8;
---text-muted: #7a7a7a;
-
-📐 Layout Structure
-
-Flexbox-driven
-
-Search input uses flex: 1
-
-Search button fixed width
-
-SVG icon fills container (width:100%, height:100%)
-
-🛠️ Installation & Setup
-1️⃣ Clone your fork
-git clone https://github.com/<your-username>/Reddit-Client-Portfolio.git
+```bash
+1️⃣git clone https://github.com/cwillromero/Reddit-Client-Portfolio.git
 cd Reddit-Client-Portfolio
 
 2️⃣ Install dependencies
 npm install
 
-3️⃣ Start development server
+3️⃣ Start the development server
 npm run dev
 
 
-Runs at http://localhost:5173/
+Your project will run locally on:
 
-🧭 Component Breakdown
-🔷 NavBar.tsx
+http://localhost:5173/
 
-Functional component
+🎨 Styling Breakdown
 
-Minimal props
+The navbar uses clean flexbox layout:
 
-Inline SVG
+🧩 Layout Highlights
 
-Imports scoped CSS
+.navbar → horizontal layout + spacing
 
-Reusable layout
+.navbar-search-container → fixes alignment issues
 
-🔷 navBar.module.css
+.navbar-search-input → expands using flex: 1
 
-Theming
+.navbar-search-button → fixed 2rem width, icon centered
 
-Flex alignment
+.navbar-search-icon → fills the button (width: 100%; height: 100%)
 
-Input resets
+🎛️ Theme Support
 
-Hover states
+Change colors via CSS variables:
 
-Responsive (WIP)
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1b;
+  --bg-input: #f6f7f8;
+  --text-muted: #878a8c;
+}
 
-🔧 Known Issues
+🧩 Components Explained
+📌 NavBar.tsx
+
+Handles logo rendering
+
+Renders search bar with input + button
+
+Uses imported CSS module for scoped styling
+
+📌 navBar.module.css
+
+All styles for structure + spacing
+
+Fixes the search bar alignment bug
+
+Makes the navbar modern and responsive-ready
+
+📌 reddit.png
+
+The official project logo used inside <img />
+
+🛠️ Known Issues
 Issue	Status
-Responsive Navbar	⏳ In Progress
-More UI Screens	⏳ Planned
-Accessibility (ARIA)	⏳ Pending
-Sidebar + Feed Components	⏳ Planned
-🗺️ Roadmap
-🔹 Short Term
+Search input alignment on small screens	Pending fix
+Navbar width responsiveness	Needs media queries
+Documentation expansion	In progress
+Limited components	More Reddit UI planned
+🧭 Roadmap
+🔜 Short-Term
 
-Add responsive breakpoints
+Add media queries for small screens
 
-Improve mobile layout
+Improve accessibility (ARIA, keyboard navigation)
 
-Add dark mode
+Add complete contributor onboarding docs
 
-Add ARIA labels
+📅 Mid-Term
 
-Navigation animations
+Build sidebar + post list
 
-🔹 Medium Term
+Add voting & comment components
 
-Add sidebar
+Add routing for different Reddit pages
 
-Post cards
+🚀 Long-Term
 
-Voting UI
+Fully interactive Reddit-style client
 
-Comment section
+Theming engine with multiple color presets
 
-Component library expansion
+API integration for real post data
 
-🔹 Long Term
+🤝 Contribution Guide
 
-Theme switcher
+We welcome all contributors — especially beginners!
+Follow the steps below to contribute:
 
-Routing
+1️⃣ Fork the repository
 
-Unit tests (Vitest + RTL)
+Click Fork on GitHub (top right corner).
 
-Component showcase playground
+2️⃣ Clone your fork
+git clone <your-fork-url>
 
-🤝 How to Contribute
-1. Fork the repo
-2. Clone your fork
-3. Create a new branch
-git checkout -b docs/update-readme
+3️⃣ Create a new branch
+git checkout -b docs-improvement
 
-4. Make changes
-5. Commit
-git commit -m "docs: enhanced animated readme"
+4️⃣ Make your changes
 
-6. Push
-git push origin docs/update-readme
+Improve this README
 
-7. Open a pull request
+Fix navbar alignment
 
-Reference Issue #19 (Documentation)
+Add responsive styles
 
-📝 Contribution Guidelines
+Add components
 
-Write clear commit messages
+5️⃣ Commit and push
+git add .
+git commit -m "Improved documentation"
+git push origin docs-improvement
 
-Keep PRs focused and small
+6️⃣ Create a Pull Request
 
-Add screenshots for UI changes
+Go to Pull Requests → New PR
 
-Match TypeScript and CSS module patterns
+Select your branch
 
-Test using npm run dev
+Write a clear explanation
 
-Maintain clean component structure
+Submit 🎉
 
-📜 License
+We'll review and merge after verification!
 
-This project is licensed under the MIT License.
+📝 License
 
-❤️ Acknowledgements
+This project is licensed under the MIT License — free to use, modify, and distribute.
 
-Inspired by Reddit’s UI
-
-Built with React, TypeScript, and Vite
-
-Supported by open-source contributors
+<p align="center"><b>⭐ If you like this project, don't forget to star the repo! ⭐</b></p>
