@@ -126,11 +126,11 @@ Makes the navbar modern and responsive-ready
 The official project logo used inside <img />
 
 ## **🛠️ Known Issues**
-Issue	Status
-Search input alignment on small screens	Pending fix
-Navbar width responsiveness	Needs media queries
-Documentation expansion	In progress
-Limited components	More Reddit UI planned
+
+Issue	                                    |    Status           
+Search input alignment on small screens   |	  Pending fix
+Navbar width responsiveness	              |  Needs media queries
+Limited components	                      |  More Reddit UI planned
 
 ## **🧭 Roadmap**
 🔜 Short-Term
@@ -162,13 +162,12 @@ Follow the steps below to contribute:
 Click Fork on GitHub (top right corner).
 
 2️⃣ Clone your fork
-bash
-Copy code
+
 git clone <your-fork-url>
+
 3️⃣ Create a new branch
-bash
-Copy code
 git checkout -b docs-improvement
+
 4️⃣ Make your changes
 Improve this README
 
@@ -179,11 +178,10 @@ Add responsive styles
 Add components
 
 5️⃣ Commit and push
-bash
-Copy code
 git add .
 git commit -m "Improved documentation"
 git push origin docs-improvement
+
 6️⃣ Create a Pull Request
 Go to Pull Requests → New PR
 
@@ -197,6 +195,8 @@ We'll review and merge after verification!
 
 ## **📝 License**
 This project is licensed under the MIT License — free to use, modify, and distribute.
+
+
 
 <p align="center"><b>⭐ If you like this project, don't forget to star the repo! ⭐</b></p>
 
